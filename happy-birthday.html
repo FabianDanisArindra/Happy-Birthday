@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f8a091;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        margin: 5px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border: #ff6347 3px solid;
+        filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+        max-height: 90vh;
+        overflow: auto;
+      }
+
+      h1 {
+        color: #ff6347;
+        font-size: 2.7em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #333;
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      .balloons {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .balloon {
+        width: 50px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 10px;
+        position: relative;
+        animation: float 3s infinite ease-in-out;
+      }
+
+      .balloon:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 10px;
+        height: 30px;
+        background: #333;
+        border-radius: 5px;
+        transform: translateX(-50%);
+      }
+
+      .red {
+        background-color: #ff4500;
+      }
+
+      .blue {
+        background-color: #1e90ff;
+      }
+
+      .green {
+        background-color: #32cd32;
+      }
+
+      .yellow {
+        background-color: #ffd700;
+      }
+
+      .signature {
+        font-style: italic;
+        color: #555;
+        margin-top: 30px;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selamat Ulang Tahun Himma !</h1>
+      <p>Semoga sehat selalu, diberikan panjang umur dan semoga jadi anak yang sholeh sholehah.</p>
+      <div class="balloons">
+        <div class="balloon red"></div>
+        <div class="balloon blue"></div>
+        <div class="balloon green"></div>
+        <div class="balloon yellow"></div>
+      </div>
+      <p class="signature">Dari,</p>
+      <p class="signature">Fabian Danis Arindra</p>
+    </div>
+  </body>
+</html>
